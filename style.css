@@ -1,0 +1,212 @@
+body {
+  background-color: #eeeeee;
+}
+
+.main {
+  display: flexl;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+#header-img {
+  width: 50px;
+  height: 50px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #eeeeee;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#nav-bar {
+  display: flex;
+  flex-grow: 1;
+  min-height: 80px;
+  align-items: center;
+}
+
+#nav-bar ul {
+  text-align: center;
+  padding: 0;
+}
+
+#nav-bar ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#nav-bar ul li a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 430px;
+  width: 100%;
+}
+
+.form form input {
+  display: block;
+}
+.form form input:first-child {
+  margin-bottom: 20px;
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 6px;
+  width: 100%;
+}
+
+.form form input:first-child {
+  margin-bottom: 22px;
+  padding: 4px 20px;
+  font-size: 20px;
+}
+
+#features {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#features .card {
+  display: flex;
+  align-items: center;
+}
+
+#features .card .content {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#how-it-works {
+  max-width: 100%;
+  margin: 50px auto;
+}
+
+#video {
+  display: flex;
+  margin: auto;
+}
+
+#pricing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#pricing .card {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+}
+
+#pricing .card h2 {
+  background-color: rgb(185, 183, 183);
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+}
+strong {
+  font-size: 25px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+footer > ul {
+  padding: 0;
+}
+
+footer > ul li {
+  display: inline;
+}
+
+footer > ul li:not(last-child) {
+  margin-right: 10px;
+}
+
+footer > ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (min-width: 550px) {
+  #features .card .content {
+    text-align: left;
+  }
+}
+
+@media (min-width: 600px) {
+  #header {
+    flex-direction: row;
+    left: 5%;
+    right: 5%;
+  }
+  #nav-bar ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #nav-bar ul li {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  #nav-bar ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  #pricing {
+    flex-direction: row;
+    align-self: center;
+  }
+
+  #pricing .card:not(last-child) {
+    margin-right: 15px;
+  }
+}
